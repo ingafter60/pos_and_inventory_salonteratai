@@ -1,3 +1,4 @@
+<?php include 'config/connectdb.php'; ?>
 <!DOCTYPE html>
 <html>
 

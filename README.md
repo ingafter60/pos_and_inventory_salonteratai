@@ -27,3 +27,9 @@
         new file:   inc/footer.php
         new file:   inc/head.php
         new file:   inc/header.php
+
+### 5. Create Database and Database Connection-php
+
+        modified:   README.md
+        new file:   config/connectdb.php
+        modified:   index.php
