@@ -18,9 +18,17 @@ if (isset($_POST['btn_login'])) {
     $select->execute();
     $row = $select->fetch(PDO::FETCH_ASSOC);
 
-    if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword) {
+    // Login as admin
+    if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'admin') {
         echo $success = 'Anda sukses login';
-        header('refresh:5; dashboard.php');
+        header('refresh:2; dashboard.php');
+
+        // Login as staff 
+    } else if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'user') {
+        echo $success = 'Anda sukses login';
+        header('refresh:2; user.php');
+
+        // Login failed 
     } else {
         echo 'Anda gagal login';
     }
