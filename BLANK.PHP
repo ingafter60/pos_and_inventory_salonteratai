@@ -34,4 +34,4 @@
 </div><!-- END Content Wrapper -->
 
 <!-- FOOTER -->
-<?php include 'inc/footer.php'; ?>
+<?php include_once 'inc/footer.php'; ?>
