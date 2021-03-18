@@ -6,10 +6,24 @@ session_start();
 // there should be email and password printed out
 if (isset($_POST['btn_login'])) {
 
-    $email    = $_POST['txt_email'];
-    $password = $_POST['txt_password'];
+    $varUseremail  = $_POST['txt_email'];
+    $varPassword   = $_POST['txt_password'];
 
-    echo $email . " -- " . $password;
+    // echo $email . " -- " . $password;
+
+    $select = $pdo->prepare(
+        "SELECT * FROM tbl_user
+        WHERE useremail='$varUseremail' AND password='$varPassword'"
+    );
+    $select->execute();
+    $row = $select->fetch(PDO::FETCH_ASSOC);
+
+    if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword) {
+        echo $success = 'Anda sukses login';
+        header('refresh:5; dashboard.php');
+    } else {
+        echo 'Anda gagal login';
+    }
 }
 ?>
 <!DOCTYPE html>
