@@ -3,3 +3,9 @@
 ## A. Configuring Dashboard with Login and Admin Panel
 
 ### 1. Initial setup
+
+### 2. Login page setup
+
+        modified:   README.md
+        new file:   _lessonImages/A. Dashboard/2. Login page setup.png
+        modified:   index.php
