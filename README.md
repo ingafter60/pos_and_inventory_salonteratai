@@ -33,3 +33,8 @@
         modified:   README.md
         new file:   config/connectdb.php
         modified:   index.php
+
+### 6. try catch in php with database connection
+
+        modified:   README.md
+        modified:   config/connectdb.php
