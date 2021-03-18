@@ -1,4 +1,17 @@
-<?php include 'config/connectdb.php'; ?>
+<?php
+include_once 'config/connectdb.php';
+session_start();
+
+// If user fill in the the form and click login button
+// there should be email and password printed out
+if (isset($_POST['btn_login'])) {
+
+    $email    = $_POST['txt_email'];
+    $password = $_POST['txt_password'];
+
+    echo $email . " -- " . $password;
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -33,34 +46,35 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="index2.html"><b>Teratai</b>Salon</a>
+            <a href="index.php"><b>Teratai</b>Salon</a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">Sign in to start your session</p>
 
-            <form action="../../index2.html" method="post">
+            <form action="" method="post">
                 <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" class="form-control" placeholder="Email" name="txt_email">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" name="txt_password">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
+                        <a href="#">I forgot my password</a><br>
                     </div>
                     <!-- /.col -->
                     <div class="col-xs-4">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" name="btn_login">Login</button>
                     </div>
                     <!-- /.col -->
                 </div>
             </form>
             <!-- /.social-auth-links -->
 
-            <a href="#">I forgot my password</a><br>
+
 
         </div>
         <!-- /.login-box-body -->
