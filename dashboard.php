@@ -1,3 +1,12 @@
+<?php
+include_once 'config/connectdb.php';
+session_start();
+
+if ($_SESSION['useremail'] == "") {
+    header('location:index.php');
+}
+?>
+
 <!-- HEAD -->
 <?php include 'inc/head.php'; ?>
 

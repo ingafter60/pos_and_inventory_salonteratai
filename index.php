@@ -20,11 +20,25 @@ if (isset($_POST['btn_login'])) {
 
     // Login as admin
     if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'admin') {
+
+        // Session
+        $_SESSION['userid']     = $row['userid'];
+        $_SESSION['username']   = $row['username'];
+        $_SESSION['useremail']  = $row['useremail'];
+        $_SESSION['role']       = $row['role'];
+
         echo $success = 'Anda sukses login';
         header('refresh:2; dashboard.php');
 
         // Login as staff 
     } else if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'user') {
+
+        // Session
+        $_SESSION['userid']     = $row['userid'];
+        $_SESSION['username']   = $row['username'];
+        $_SESSION['useremail']  = $row['useremail'];
+        $_SESSION['role']       = $row['role'];
+
         echo $success = 'Anda sukses login';
         header('refresh:2; user.php');
 
