@@ -65,3 +65,10 @@
         modified:   dashboard.php
         modified:   index.php
         modified:   user.php
+
+### 11.1 Login code part-05-logout
+
+        modified:   README.md
+        modified:   inc/header.php
+        modified:   inc/headeruser.php
+        new file:   logout.php

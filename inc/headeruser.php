@@ -53,7 +53,7 @@
                                         <a href="#" class="btn btn-default btn-flat">Change password</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
                                     </div>
                                 </li>
                             </ul>
