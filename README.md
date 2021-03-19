@@ -92,3 +92,8 @@ https://www.udemy.com/course/php-for-beginners-to-inventory-pos-sales-project-ad
         new file:   bower_components/sweetalert/sweetalert.js
         modified:   inc/footer.php
         modified:   index.php
+
+### 13.1 Sweet alert forgot password
+
+        modified:   README.md
+        modified:   index.php
