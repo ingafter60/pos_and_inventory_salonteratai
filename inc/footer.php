@@ -1,10 +1,10 @@
 <footer class="main-footer">
-    <!-- To the right -->
-    <div class="pull-right hidden-xs">
-        Inventory POS System Version 1.0
-    </div>
-    <!-- Default to the left -->
-    <strong>Developed by: ING for <a href="#">Teratai Salon</a>.</strong> All rights reserved.
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+    Inventory POS System Version 1.0
+  </div>
+  <!-- Default to the left -->
+  <strong>Developed by: ING for <a href="#">Teratai Salon</a>.</strong> All rights reserved.
 </footer>
 
 <!-- Control Sidebar -->

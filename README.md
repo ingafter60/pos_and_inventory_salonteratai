@@ -1,5 +1,7 @@
 # BUILDING AN POINT OF SALES AND INVENTORY SYSTEM FOR SALON TERATAI
 
+https://www.udemy.com/course/php-for-beginners-to-inventory-pos-sales-project-adminlte-dashboard/
+
 ## A. Configuring Dashboard with Login and Admin Panel
 
 ### 1. Initial setup
@@ -82,4 +84,11 @@
         modified:   inc/asideuser.php
         modified:   inc/header.php
         modified:   inc/headeruser.php
+        modified:   index.php
+
+### 12. Login code part-06-sweetalert
+
+        modified:   README.md
+        new file:   bower_components/sweetalert/sweetalert.js
+        modified:   inc/footer.php
         modified:   index.php

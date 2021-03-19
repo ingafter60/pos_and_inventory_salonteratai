@@ -1,3 +1,12 @@
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- Sweetalert -->
+<script src="bower_components/sweetalert/sweetalert.js"></script>
+
+
 <?php
 include_once 'config/connectdb.php';
 session_start();
@@ -27,8 +36,17 @@ if (isset($_POST['btn_login'])) {
         $_SESSION['useremail']  = $row['useremail'];
         $_SESSION['role']       = $row['role'];
 
-        echo $success = 'Anda sukses login';
-        header('refresh:2; dashboard.php');
+        echo '<script type="text/javascript">
+        jQuery(function validation(){
+            swal ( {
+                title: "Good job! ' . ucfirst($_SESSION['username']) . '",
+                text: "Anda berhasil logged in",
+                icon: "success",
+                button: "Loading .....",
+              });
+        });
+        </script>';
+        header('refresh:3; dashboard.php');
 
         // Login as staff 
     } else if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'staf') {
@@ -39,8 +57,17 @@ if (isset($_POST['btn_login'])) {
         $_SESSION['useremail']  = $row['useremail'];
         $_SESSION['role']       = $row['role'];
 
-        echo $success = 'Anda sukses login';
-        header('refresh:2; user.php');
+        echo '<script type="text/javascript">
+        jQuery(function validation(){
+            swal ( {
+                title: "Good job! ' . ucfirst($_SESSION['username']) . '",
+                text: "Anda berhasil logged in",
+                icon: "success",
+                button: "Loading .....",
+              });
+        });
+        </script>';
+        header('refresh:3; user.php');
 
         // Login failed 
     } else {
