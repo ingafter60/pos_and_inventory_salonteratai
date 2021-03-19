@@ -97,3 +97,8 @@ https://www.udemy.com/course/php-for-beginners-to-inventory-pos-sales-project-ad
 
         modified:   README.md
         modified:   index.php
+
+### 13.2 Added menu: Dashboard, Category and Registration to aside
+
+        modified:   README.md
+        modified:   inc/aside.php
