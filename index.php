@@ -19,7 +19,7 @@ if (isset($_POST['btn_login'])) {
     $row = $select->fetch(PDO::FETCH_ASSOC);
 
     // Login as admin
-    if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'admin') {
+    if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'owner') {
 
         // Session
         $_SESSION['userid']     = $row['userid'];
@@ -31,7 +31,7 @@ if (isset($_POST['btn_login'])) {
         header('refresh:2; dashboard.php');
 
         // Login as staff 
-    } else if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'user') {
+    } else if ($row['useremail'] == $varUseremail and $row['password'] == $varPassword and $row['role'] == 'staf') {
 
         // Session
         $_SESSION['userid']     = $row['userid'];

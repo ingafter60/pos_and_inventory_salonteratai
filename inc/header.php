@@ -27,18 +27,19 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                                <img src="dist/img/admin.jpg" class="user-image" alt="User Image">
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">Rai Sukardi</span>
+                                <span class="hidden-xs"><?php echo ucfirst($_SESSION['username']); ?></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <img src="dist/img/admin.jpg" class="img-circle" alt="User Image">
 
                                     <p>
                                         Pendiri Teratai Salon
                                         <small>Berdiri sejak Nov. 2012</small>
+                                        <small><?php echo $_SESSION['useremail']; ?></small>
                                     </p>
                                 </li>
                                 <!-- Menu Body -->

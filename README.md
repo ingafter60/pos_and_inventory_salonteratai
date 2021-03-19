@@ -72,3 +72,14 @@
         modified:   inc/header.php
         modified:   inc/headeruser.php
         new file:   logout.php
+
+### 11.2 Login code part-05-logout with session name
+
+        modified:   README.md
+        new file:   dist/img/admin.jpg
+        new file:   dist/img/user.jpg
+        modified:   inc/aside.php
+        modified:   inc/asideuser.php
+        modified:   inc/header.php
+        modified:   inc/headeruser.php
+        modified:   index.php
