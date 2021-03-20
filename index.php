@@ -117,11 +117,11 @@ if (isset($_POST['btn_login'])) {
 
             <form action="" method="post">
                 <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Email" name="txt_email">
+                    <input type="email" class="form-control" placeholder="Email" name="txt_email" required>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password" name="txt_password">
+                    <input type="password" class="form-control" placeholder="Password" name="txt_password" required>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
